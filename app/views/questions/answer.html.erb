@@ -1,10 +1,19 @@
 <h1>Answer</h1>
 
-<p> Question : </p>
-<%= @question %>
+<div class="question">
+  <div class="question-content answer-container">
+    <p class="text-italic"> Your question : </p>
+    <%= @question %>
+  </div>
+</div>
+<div class="answer border">
+  <div class="answer-content answer-container">
+    <p class="text-italic"> Coach's answer : </p>
+    <%= @answer %>
+  </div>
+</div>
 
-<p> Answer : </p>
-<%= @answer %>
 
+<div class="link">
 <p><%= link_to 'Ask a new question', ask_path %> </p>
-
+</div>

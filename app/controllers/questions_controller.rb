@@ -5,8 +5,9 @@ class QuestionsController < ApplicationController
   def answer
     # raise
     @question = params[:question]
-
-    if @question == "I'am going to work"
+    if @question == ""
+      @answer = "Please, ask a question"
+    elsif @question == "I'am going to work"
       @answer = "Great!"
     elsif @question.slice(-1) == "?"
       @answer = "Silly question, get dressed and go to work!"
